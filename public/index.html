@@ -11,9 +11,9 @@
 
 <body>
     
-    <nav class="max-w-2xl">
+    <nav class="">
         
-        <div class="flex justify-between px-5 py-6 flex-wrap">
+        <div class="max-w-screen-2xl flex justify-between px-5 py-6 flex-wrap border md:space-x-8">
             <a class="flex justify-between items-center gap-2" href="#">
                 <img class="h-10 rounded-full" src="../img/yinyang.png" alt="">
                 <span class="font-bold">REQ TODO</span>
@@ -23,8 +23,8 @@
                 <svg class="h-8" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#332e2e" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
             </button>
 
-            <section id="navBarMain" class="hidden w-full hidde mt-3 bg-slate-100 overflow-hidden rounded-lg">
-                <ul id="navWrapper" class="flex flex-col bg-transparent border p-2">
+            <section id="navBarMain" class="hidden w-full hidde mt-3 bg-slate-100 rounded-lg md:block md:w-auto md:bg-white md:mt-0">
+                <ul id="navWrapper" class="flex flex-col bg-transparent border  p-2 md:flex-row md:border-none">
                     <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="">Home</a></li>
                     <li>
                     <button id="dropdownBtn" class="p-2 w-full flex justify-between items-center rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white">
@@ -33,13 +33,13 @@
                             keyboard_arrow_down
                         </span>
                     </button>
-                    <div id="dropdownMenu" class="w-44 z-10 hidden divide-y divide-gray-400 rounded-lg overflow-hidden">
+                    <div id="dropdownMenu" class="absolute z-10 w-44 hidden divide-y divide-gray-400 rounded-lg overflow-hidden">
                         <ul class="flex flex-col justify-center">
-                            <li><a class="py-1 px-2 hover:bg-slate-200 bg-slate-300 block " href="">Volume</a></li>
-                            <li><a class="py-1 px-2 hover:bg-slate-200 bg-slate-300 block " href="">Graphic</a></li>
-                            <li><a class="py-1 px-2 hover:bg-slate-200 bg-slate-300 block " href="">Control</a></li>
+                            <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="">Volume</a></li>
+                            <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="">Graphic</a></li>
+                            <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="">Control</a></li>
                         </ul>
-                        <div class="font-semibold"><a class="py-2 px-2 hover:bg-slate-200 bg-slate-300 block " href="">Log out</a></div>
+                        <div class="font-semibold"><a class="py-2 px-4 hover:bg-slate-200 bg-slate-300 block " href="">Log out</a></div>
                     </div>
                     </li>
                     <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="">Shop</a></li>
