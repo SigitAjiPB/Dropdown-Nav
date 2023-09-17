@@ -5,61 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Dropdown Nav</title>
 </head>
 
-<body class="text-slate-700 font-RobotoCondensed">
-    
-    <nav class="nav">
-        <div class="max-w-screen-2xl flex justify-between px-5 py-6 flex-wrap">
-            <a class="flex justify-between items-center gap-2 md:gap-4" href="#">
-                <img class="h-10 rounded-full" src="../img/yinyang.png" alt="">
-                <span class="font-bold text-2xl">REQ TODO</span>
-            </a>
+<body class="text-slate-700 font-RobotoCondensed h-screen">
 
-            <button id="navMainBtn" class="hover:bg-slate-100 rounded-lg md:hidden">
-                <svg class="h-8" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#332e2e" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
-            </button>
+    <section class="container flex flex-col border border-red-500 h-full">
+        <nav class="nav relative">
+            <div class="max-w-screen-2xl flex justify-between px-5 py-6 flex-wrap fixed right-0 top-0 left-0 z-10">
+                <a class="flex justify-between items-center gap-2 md:gap-4" href="#">
+                    <img class="h-10 rounded-full" src="../img/yinyang.png" alt="">
+                    <span class="font-bold text-2xl">REQ TODO</span>
+                </a>
 
-            <section id="navBarMain" class="hidden w-full mt-3 bg-slate-100 rounded-lg md:block md:w-auto md:bg-white md:mt-0">
-                <ul id="navWrapper" class="flex flex-col bg-transparent p-2 md:flex-row md:border-none md:space-x-8">
-                    <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">Home</a></li>
-                    <li>
-                    <button id="dropdownBtn" class="p-2 w-full flex justify-between items-center rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white">
-                        <span>Setting</span>
-                        <span class="material-symbols-outlined">
-                            keyboard_arrow_down
-                        </span>
-                    </button>
-                    <div id="dropdownMenu" class="absolute z-20 w-44 hidden divide-y divide-gray-400 rounded-lg overflow-hidden ">
-                        <ul class="flex flex-col justify-center">
-                            <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Volume</a></li>
-                            <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Graphic</a></li>
-                            <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Control</a></li>
-                        </ul>
-                        <div class="font-semibold"><a class="py-2 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Log out</a></div>
-                    </div>
-                    </li>
-                    <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">Shop</a></li>
-                    <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">Dashboard</a></li>
-                    <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">About</a></li>
-                </ul>
-            </section>
-        </div>
-    </nav>
+                <button id="navMainBtn" class="hover:bg-slate-100 rounded-lg md:hidden">
+                    <svg class="h-8" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#332e2e" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
+                </button>
 
-    <main>
-        <section class="mainWrapper">
-            <div>
-                
+                <section id="navBarMain" class="hidden w-full mt-3 bg-slate-100 rounded-lg md:block md:w-auto md:bg-white md:mt-0">
+                    <ul id="navWrapper" class="flex flex-col bg-transparent p-2 md:flex-row md:border-none md:space-x-8">
+                        <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">Home</a></li>
+                        <li>
+                        <button id="dropdownBtn" class="p-2 w-full flex justify-between items-center rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white">
+                            <span>Setting</span>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </button>
+                        <div id="dropdownMenu" class="absolute z-20 w-44 hidden divide-y divide-gray-400 rounded-lg overflow-hidden">
+                            <ul class="flex flex-col justify-center">
+                                <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Volume</a></li>
+                                <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Graphic</a></li>
+                                <li><a class="py-1 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Control</a></li>
+                            </ul>
+                            <div class="font-semibold"><a class="py-2 px-4 hover:bg-slate-200 bg-slate-300 block " href="#">Log out</a></div>
+                        </div>
+                        </li>
+                        <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">Shop</a></li>
+                        <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">Dashboard</a></li>
+                        <li><a class=" p-2 block rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white" href="#">About</a></li>
+                    </ul>
+                </section>
             </div>
-        </section>
+        </nav>
 
-    </main>
+        <main class="mt-20 px-6 py-4 relative z-0">
+            <section class="listWrapper flex justify-between items-center gap-4">
+                <div class="bg-slate-200 flex w-full rounded-lg p-2 gap-2 items-center justify-between">
+                    <input type="checkbox" class="flex items-center justify-center bg-transparent"><span class="material-symbols-outlined">
+                        done</span></input>
+                    <p class="max-w-none w-full">chatc Giratina</p>
+                </div>
+                <button class="bg-red-400 text-white flex items-center justify-center rounded-lg h-8 w-10 hover:bg-red-500"><span class="material-symbols-outlined">
+                    delete
+                    </span></button>
+            </section>
+
+        </main>
+
+        <section class="absolute bottom-0 right-0 left-0">
+            <form class=" flex bg-slate-400 p-6 rounded-t-xl gap-3 h-20 border border-slate-400" > 
+                <input class="bg-white outline-none ring-0 border-none px-3 py-2 w-full h-full rounded-lg" type="text" placeholder="+ add List Here">
+                <button class="w-8 h-8 shadow-lg flex justify-center items-center rounded-lg hover:bg-slate-500 hover:text-white"><span class="material-symbols-outlined">add</span></button>
+                    
+            </form>
+        </section>
+    </section>
 
 
 
